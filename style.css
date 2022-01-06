@@ -88,3 +88,33 @@ header .hide {
 /* ------------------------------------------------------------</Home section > ---------------------------------------------------------------- */
 
 /*---------------------------------------------------------------- header---------------------------------------------------------------- */
+
+/* skill section */
+.Skills ul {
+  list-style: none;
+}
+.Skills .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 1.2rem;
+  margin-top: 0.2rem;
+}
+.Skills .skill-items {
+  border: 1px solid black;
+  border-radius: 0.6rem;
+  margin-top: 0.2rem;
+  /* border-top: none; */
+}
+.fab {
+  font-size: 1.2rem;
+}
+.Skills .show {
+  display: block;
+  background-color: green;
+}
+.Skills .hide {
+  background-color: red;
+  display: none;
+}
