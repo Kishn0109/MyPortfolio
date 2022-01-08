@@ -11,4 +11,7 @@
   #slidbar_icon {
     display: block;
   }
+  .contact-data .row > .col-md-6 {
+    padding-bottom: 10px;
+  }
 }
