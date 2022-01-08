@@ -28,7 +28,7 @@ function myFunction() {
 //-------------------------------------------------------------------------Header-------------------------------------//
 //-------------------------------------------------------------------------Header-------------------------------------//
 
-//skill section
+//--------------------------------------skill section
 let Allskill_section = document.querySelectorAll(".skill-section");
 
 // 1. function to show one skill at a time
@@ -59,7 +59,7 @@ Allskill_section.forEach((skill_section) => {
     // element.classList.add("show");
   });
 });
-
+//agian removing show class for toggle
 let skill_item = document.querySelectorAll(".skill-items");
 skill_item.forEach((oneitem) => {
   oneitem.addEventListener("click", () => {
@@ -67,3 +67,12 @@ skill_item.forEach((oneitem) => {
     oneitem.classList.add("hide");
   });
 });
+//--------------------------------------skill section
+function handelschoolqualification() {
+  let qualificationSchool = document.getElementById("qualification-school-div");
+  qualificationSchool.style.backgroundColor = "red";
+  let qualificationMyself = document.getElementById("qualification-mySedlf");
+  qualificationSchool.classList.add("qualification-active");
+  qualificationSchool.classList.remove("qualification-inactive");
+  qualificationMyself.classList.add("qualification-inactive");
+}

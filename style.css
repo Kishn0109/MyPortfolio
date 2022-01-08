@@ -118,3 +118,105 @@ header .hide {
   background-color: red;
   display: none;
 }
+
+.about-image {
+  padding: 0px;
+}
+.about-me .wraper {
+  padding: 20px 0px;
+}
+.score-projects {
+  gap: 1rem;
+}
+.about-image img {
+  width: 73%;
+  border: 2px solid black;
+}
+.about-me {
+  padding: 20px 0px;
+}
+
+/* qualification  */
+.qualification-school span {
+  position: absolute;
+  background-color: green;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.qualification-school .row {
+  padding: 30px 0px;
+  position: relative;
+}
+.qualification-school .row .col-6 {
+  position: relative;
+}
+.qualification-school .left .col-6 {
+  position: relative;
+}
+.qualification-school .left span {
+  /* display: inline-block; */
+  position: absolute;
+  background-color: green;
+  right: 0px;
+}
+.qualification-mySedlf span {
+  position: absolute;
+  background-color: green;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.qualification-mySedlf .row {
+  padding: 30px 0px;
+  position: relative;
+}
+.qualification-mySedlf .row .col-6 {
+  position: relative;
+}
+.qualification-mySedlf .left .col-6 {
+  position: relative;
+}
+.qualification-mySedlf .left span {
+  /* display: inline-block; */
+  position: absolute;
+  background-color: green;
+  right: 0px;
+}
+.qualification-inner-data {
+  padding: 0px 20px;
+}
+.qualification-line {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.qualification-active {
+  display: block;
+}
+.qualification-inactive {
+  display: none;
+}
+.subtitle .qualification-title {
+  cursor: pointer;
+}
+.subtitle .qualification-title:hover {
+  color: aqua;
+}
+.subtitle .qualification-work-active {
+  color: aqua;
+}
+
+/* contact  */
+
+.contact-me .contact-data .row.name input {
+  width: 50%;
+}
+.contact-me .contact-data input {
+  width: 100%;
+}
