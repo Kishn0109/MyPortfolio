@@ -68,11 +68,43 @@ skill_item.forEach((oneitem) => {
   });
 });
 //--------------------------------------skill section
+//--------------------------------------qualification section
+
 function handelschoolqualification() {
   let qualificationSchool = document.getElementById("qualification-school-div");
-  qualificationSchool.style.backgroundColor = "red";
+  let qualificationSchoolButton = document.getElementById(
+    "qualification-school-button"
+  );
+  let qualificationMyselfButton = document.getElementById(
+    "qualification-myself-button"
+  );
+  qualificationSchoolButton.classList.add("qualification-work-active");
+  qualificationMyselfButton.classList.remove("qualification-work-active");
   let qualificationMyself = document.getElementById("qualification-mySedlf");
   qualificationSchool.classList.add("qualification-active");
   qualificationSchool.classList.remove("qualification-inactive");
   qualificationMyself.classList.add("qualification-inactive");
+}
+function handelMyselfqualification() {
+  let qualificationSchool = document.getElementById("qualification-school-div");
+  let qualificationMyself = document.getElementById("qualification-mySedlf");
+  let qualificationMyselfButton = document.getElementById(
+    "qualification-myself-button"
+  );
+  let qualificationSchoolButton = document.getElementById(
+    "qualification-school-button"
+  );
+  //for active and deactive buttons only
+  qualificationMyselfButton.classList.add("qualification-work-active");
+  // qualificationMyselfButton.classList.remove("qualification-work-deactive");
+  qualificationSchoolButton.classList.remove("qualification-work-active");
+  // qualificationSchoolButton.classList.add("qualification-work-deactive");
+
+  //active and deactive qualification data
+  // 1. school inactive
+  // 2. self active
+  qualificationSchool.classList.add("qualification-inactive");
+  qualificationSchool.classList.remove("qualification-active");
+  qualificationMyself.classList.add("qualification-active");
+  qualificationMyself.classList.remove("qualification-inactive");
 }
