@@ -1,14 +1,23 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-color: lavenderblush;
+}
 /* -------------------------------------------------------------------Header ----------------------------------------------------------------*/
 /* --------------------------------------------------------------------Navbar */
 nav {
   height: 50px;
-  background-color: red;
+  background-color: #7752bd;
   display: flex;
   align-items: center;
+}
+.logo {
+  color: #010203;
+}
+.logo a {
+  text-decoration: none;
+  color: #010203;
 }
 nav ul {
   list-style: none;
@@ -61,7 +70,13 @@ header .hide {
 /* ------------------------------------------------------------<Home section >---------------------------------------------------------------- */
 .home_section {
   height: 95vh;
-  background-color: red;
+  /* background-color: red; */
+}
+.home_section a {
+  color: black;
+}
+.home_section a:hover {
+  color: #3b3c36;
 }
 .home_section .row {
   display: flex;
@@ -72,11 +87,15 @@ header .hide {
 }
 .home_section .row .text-about-me .all-links {
   height: 100px;
-  background-color: pink;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 1rem;
 }
 .home_section .row .text-about-me .home-headings {
   /* height: 400px; */
-  background-color: pink;
+  /* background-color: pink; */
   margin-left: 3rem;
 }
 .home-image {
@@ -85,6 +104,14 @@ header .hide {
   align-items: center;
   overflow: hidden;
 }
+.all-links li {
+  background-color: black;
+}
+
+.about-me .button {
+  margin-top: 1.5rem;
+}
+
 /* ------------------------------------------------------------</Home section > ---------------------------------------------------------------- */
 
 /*---------------------------------------------------------------- header---------------------------------------------------------------- */
@@ -97,9 +124,10 @@ header .hide {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 1.2rem;
   margin-top: 0.2rem;
+  width: 48%;
 }
 .Skills .skill-items {
   border: 1px solid black;
@@ -112,31 +140,44 @@ header .hide {
 }
 .Skills .show {
   display: block;
-  background-color: green;
+  border: none;
 }
 .Skills .hide {
-  background-color: red;
   display: none;
 }
-
+/* about section  */
 .about-image {
   padding: 0px;
 }
 .about-me .wraper {
   padding: 20px 0px;
 }
+.about-me .heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 .score-projects {
   gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .about-image img {
   width: 73%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  border-radius: 2rem;
 }
 .about-me {
   padding: 20px 0px;
 }
 
 /* qualification  */
+.qualification-main_title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 .qualification-school span {
   position: absolute;
   background-color: green;
@@ -159,16 +200,16 @@ header .hide {
 .qualification-school .left span {
   /* display: inline-block; */
   position: absolute;
-  background-color: green;
+  background-color: #7752bd;
   right: 0px;
 }
 .qualification-mySedlf span {
   position: absolute;
-  background-color: green;
+  /* background-color: #7752bd; */
   right: 0px;
   width: 10px;
   height: 10px;
-  background-color: red;
+  background-color: #7752bd;
   border-radius: 50%;
 }
 .qualification-mySedlf .row {
@@ -184,7 +225,7 @@ header .hide {
 .qualification-mySedlf .left span {
   /* display: inline-block; */
   position: absolute;
-  background-color: green;
+  background-color: #7752bd;
   right: 0px;
 }
 .qualification-inner-data {
@@ -193,7 +234,7 @@ header .hide {
 .qualification-line {
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: #7752bd;
 }
 
 .qualification-active {
@@ -206,14 +247,23 @@ header .hide {
   cursor: pointer;
 }
 .subtitle .qualification-title:hover {
-  color: aqua;
+  color: #7752bd;
 }
 .subtitle .qualification-work-active {
-  color: aqua;
+  color: #7752bd;
+}
+/* project  */
+.projects-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
+/* /project  */
 /* contact  */
-
+.contact-title {
+  text-align: center;
+}
 .contact-me .contact-data .row.name input {
   width: 49%;
   margin: 0px 2px;
@@ -232,4 +282,68 @@ header .hide {
 }
 .contact-data .row {
   padding: 10px 0px;
+}
+
+/* //footer  */
+
+.footer-top .col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.footer-top .top-right {
+  gap: 1rem;
+}
+.footer-top .top-middel {
+  justify-content: space-between;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0.5rem 0px; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+footer {
+  /* padding: 1.5rem 0px; */
+  background-color: purple;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#carouselExampleCaptions {
+  /* overflow: hidden; */
+}
+.carousel-item {
+  /* width: 50px; */
+  height: 50%;
+  overflow: hidden;
+}
+.carousel-item img {
+  height: 32rem;
+  /* width: 500px; */
+  /* height: 50%; */
+}
+section {
+  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.headingStyle {
+  font-weight: 700;
+  color: #1b1b1b;
+}
+.buttonDesign {
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0.6rem 0.9rem;
+  transition: 0.5s ease-in-out;
+}
+.buttonDesign:hover {
+  background-color: #7752bd;
+  transition: 0.5s ease-in-out;
 }
