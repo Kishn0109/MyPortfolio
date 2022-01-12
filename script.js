@@ -35,6 +35,9 @@ let Allskill_section = document.querySelectorAll(".skill-section");
 Allskill_section.forEach((skill_section) => {
   skill_section.addEventListener("click", (e) => {
     // let firstclasselement = value.classList[0];
+    // console.log(e.path[0]);
+    handelActive(e.path[0]);
+    e.path[0].classList.add("active_head");
     if (e.path.length < 8) {
       console.log("click me aya 1");
       let AllSkills_item = document.querySelectorAll(".skill-items");
@@ -59,6 +62,16 @@ Allskill_section.forEach((skill_section) => {
     // element.classList.add("show");
   });
 });
+function handelActive(head) {
+  let Allhead = document.querySelectorAll(".head");
+  Allhead.forEach((head) => {
+    console.log("ye aye", head);
+    if ((head.classList.contains = "active_head")) {
+      head.classList.remove("active_head");
+    }
+  });
+  // console.log(head);
+}
 //agian removing show class for toggle
 let skill_item = document.querySelectorAll(".skill-items");
 skill_item.forEach((oneitem) => {

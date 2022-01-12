@@ -145,6 +145,28 @@ header .hide {
 .Skills .hide {
   display: none;
 }
+.active_head .fas {
+  color: #7752bd;
+  transition: 0.3s ease-in-out;
+}
+.active_head .logo2 {
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+.active_head .heading {
+  color: #000000;
+}
+.progress {
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+.progress > div {
+  background-color: #7752bd;
+}
+.skill-items li .fab {
+  font-size: 1rem;
+  color: #7752bd;
+}
 /* about section  */
 .about-image {
   padding: 0px;
@@ -258,23 +280,80 @@ header .hide {
   margin-bottom: 2rem;
   text-align: center;
 }
+.carousel-item .project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item .project-img img {
+  width: 80%;
+  height: 60%;
+  border-radius: 1rem;
+}
+.carousel-item {
+  height: 30rem;
+}
+.carousel-item > .content-head {
+  height: 30rem;
+}
+.carousel-item .item-title {
+  display: flex;
+  justify-content: center;
+}
+.carousel-item .item-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item .item-right > div {
+  height: 50%;
+}
+.carousel-item .item-right .contant {
+  width: 100%;
+  height: 40%;
+  margin-top: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+.carousel-item .item-right button {
+  margin-top: 4rem;
+}
+#carouselExampleCaptions {
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-width {
+  width: 50%;
+}
 
 /* /project  */
 /* contact  */
 .contact-title {
   text-align: center;
 }
-.contact-me .contact-data .row.name input {
+.contact-me .contact-data .row.name .contact-input {
   width: 49%;
   margin: 0px 2px;
 }
-.contact-me .contact-data input {
+.contact-me .contact-data .contact-input {
   width: 100%;
   height: 50px;
+  /* border-radius: 0.1rem; */
+  outline: none;
   border-radius: 0.5rem;
+  background-color: #8561c9;
+  /* padding-left: 0.5rem; */
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: pink;
 }
-.contact-me .contact-data .row.message input {
+.contact-me .contact-data .row.message .contact-input {
   height: 200px;
+  display: block;
 }
 .name-input {
   display: flex;
@@ -282,6 +361,13 @@ header .hide {
 }
 .contact-data .row {
   padding: 10px 0px;
+}
+.contact-input input {
+  color: rgb(41, 37, 37);
+}
+::placeholder {
+  color: black;
+  opacity: 0.5; /* Firefox */
 }
 
 /* //footer  */
@@ -309,10 +395,25 @@ header .hide {
 }
 footer {
   /* padding: 1.5rem 0px; */
-  background-color: purple;
+  background-color: #7752bd;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+footer a {
+  text-decoration: none;
+  color: #1a1212;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+footer .top-left {
+  color: #1a1212;
+}
+footer .footer-bottom {
+  color: #1a1212;
+}
+/* global */
 
 #carouselExampleCaptions {
   /* overflow: hidden; */
