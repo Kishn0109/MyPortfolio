@@ -20,6 +20,21 @@ function myFunction() {
     x.classList.add("show");
   }
 }
+
+let myAllnavitems = document.querySelectorAll(".nav-item");
+myAllnavitems.forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+    SlidbarremoveActive();
+    navItem.classList.add("SlidItemActive");
+  });
+});
+function SlidbarremoveActive() {
+  myAllnavitems.forEach((navItem) => {
+    navItem.classList.remove("SlidItemActive");
+  });
+}
+console.log(myAllnavitems);
+// console.log(myelement);
 //-------Navbar//-------//
 //-------Home-section//-------//
 
@@ -120,4 +135,26 @@ function handelMyselfqualification() {
   qualificationSchool.classList.remove("qualification-active");
   qualificationMyself.classList.add("qualification-active");
   qualificationMyself.classList.remove("qualification-inactive");
+}
+
+//try to do save data using backend
+let qualificationSchool = document.getElementById("qualification-school-div");
+console.log(qualificationSchool);
+let obj = {
+  firstName: String,
+  lastName: String,
+  emailId: String,
+  Message: String,
+};
+function handleSavingdata() {
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("LastName").value;
+  var emailId = document.getElementById("EmailId").value;
+  var Message = document.getElementById("Message").value;
+  console.log(firstName, lastName, emailId, Message);
+  obj.firstName = firstName;
+  obj.lastName = lastName;
+  obj.emailId = emailId;
+  obj.Message = Message;
+  console.log(obj);
 }

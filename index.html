@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn4.iconfinder.com/data/icons/internet-of-things-35/200/cloud-512.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
@@ -21,19 +26,29 @@
       src="https://kit.fontawesome.com/2976b645ba.js"
       crossorigin="anonymous"
     ></script>
-    <title>Static Template</title>
+    <title>All about me</title>
   </head>
   <body class="bg-light" style="color: gray">
     <header>
-      <nav class="container mobilenav">
-        <div class="logo" class="nav-home-logo"><a href="">karan</a></div>
+      <nav
+        class="container-fluid mobilenav"
+        style="position: fixed; z-index: 10"
+      >
+        <div class="logo" class="nav-home-logo">
+          <a href=""
+            ><img
+              src="https://cdn4.iconfinder.com/data/icons/internet-of-things-35/200/cloud-512.png"
+              alt=""
+              style="width: 50px"
+          /></a>
+        </div>
         <ul>
           <li>
-            <a href="#">Home </a>
+            <a href="#home-id">Home </a>
           </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about-id">About</a></li>
+          <li><a href="#portfolio-projects">Project</a></li>
+          <li><a href="#contact-me-id">Contact</a></li>
         </ul>
         <i
           class="fas fa-sliders-h"
@@ -51,87 +66,70 @@
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
           >
             <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap" />
+              <use
+                xlink:href="https://cdn4.iconfinder.com/data/icons/internet-of-things-35/200/cloud-512.png"
+                width="100%"
+                height="100%"
+                x="0"
+                y="0"
+              />
             </svg>
-            <span class="fs-4">Sidebar</span>
+            <span class="fs-4">Kishan</span>
           </a>
           <hr />
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">
+          <ul class="nav nav-pills flex-column mb-auto" id="kiiran">
+            <li class="nav-item SlidItemActive">
+              <a
+                href="#home-id"
+                class="nav-link text-black"
+                aria-current="page"
+              >
                 <i class="fas fa-sliders-h"></i>
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">
+              <a href="#about-id" class="nav-link text-white">
                 <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#speedometer2" />
+                  <use xlink:href="#portfolio-projects" />
                 </svg>
-                Dashboard karan
+                About
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">
+              <a href="#portfolio-projects" class="nav-link text-white">
                 <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#table" />
+                  <use xlink:href="#portfolio-projects" />
                 </svg>
-                Orders
+                Project
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">
+              <a href="#Skills" class="nav-link text-white">
                 <svg class="bi me-2" width="16" height="16">
                   <use xlink:href="#grid" />
                 </svg>
-                Products
+                Skills
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">
+              <a href="#contact-me-id" class="nav-link text-white">
                 <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#people-circle" />
+                  <use xlink:href="#contact-me-id" />
                 </svg>
-                Customers
+                Contact
               </a>
             </li>
           </ul>
-          <hr />
-          <div class="dropdown">
-            <a
-              href="#"
-              class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-              id="dropdownUser1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="https://github.com/mdo.png"
-                alt=""
-                width="32"
-                height="32"
-                class="rounded-circle me-2"
-              />
-              <strong>mdo</strong>
-            </a>
-            <ul
-              class="dropdown-menu dropdown-menu-dark text-small shadow"
-              aria-labelledby="dropdownUser1"
-            >
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
         </div>
       </nav>
-      <section class="home_section container">
+      <section class="home_section container" id="home-id">
         <div class="row h-100">
           <div class="text-about-me col-md-6 d-flex">
             <div class="all-links">
-              <a href=""><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Kishn0109"
+                ><i class="fab fa-github"></i
+              ></a>
               <a href=""><i class="fab fa-instagram"></i></a>
               <a href=""><i class="fab fa-linkedin-in"></i></a>
             </div>
@@ -181,7 +179,7 @@
       </section>
     </header>
 
-    <section class="about_me">
+    <section class="about_me" id="about-id">
       <div class="about-me container">
         <div
           class="heading headingStyle d-flex justify-content-center align-items-center"
@@ -225,7 +223,7 @@
         </div>
       </div>
     </section>
-    <section class="Skills container">
+    <section class="Skills container" id="Skills">
       <div class="skill1 skill-section">
         <div class="head active_head">
           <div class="logo1"><i class="fas fa-code"></i></div>
@@ -540,7 +538,7 @@
         </div> -->
       </div>
     </section>
-    <section class="portfolio-projects container">
+    <section class="portfolio-projects container" id="portfolio-projects">
       <div class="projects-title headingStyle">Project</div>
       <div class="project-slide">
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -671,7 +669,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-me container">
+    <section class="contact-me container" id="contact-me-id">
       <div class="contact-title">
         <h1 class="headingStyle">Contact Me</h1>
         <p>Want to cant me ?</p>
@@ -685,9 +683,8 @@
             <div class="contact-input" contenteditable="true">
               <input
                 type="text"
-                name=""
-                id=""
                 width="100%"
+                id="firstName"
                 style="
                   border: none;
                   outline: none;
@@ -695,13 +692,13 @@
                   background: none;
                 "
                 placeholder="Prince"
+                value="karab"
               />
             </div>
             <div class="contact-input" contenteditable="true">
               <input
                 type="text"
                 name=""
-                id=""
                 width="100%"
                 style="
                   border: none;
@@ -710,6 +707,7 @@
                   background: none;
                 "
                 placeholder="jordan"
+                id="LastName"
               />
             </div>
           </div>
@@ -727,7 +725,6 @@
               <input
                 type="text"
                 name=""
-                id=""
                 width="100%"
                 style="
                   border: none;
@@ -736,6 +733,7 @@
                   background: none;
                 "
                 placeholder="Example@gmail.com"
+                id="EmailId"
               />
             </div>
           </div>
@@ -747,7 +745,6 @@
               <input
                 type="text"
                 name=""
-                id=""
                 width="100%"
                 style="
                   border: none;
@@ -756,17 +753,25 @@
                   background: none;
                 "
                 placeholder="How are you"
+                id="Message"
               />
             </div>
             <!-- <input type="text" name="" id="" /> -->
-            <button class="buttonDesign" style="margin-top: 1rem">
+            <button
+              class="buttonDesign"
+              style="margin-top: 1rem"
+              onclick="handleSavingdata()"
+            >
               Send Message
             </button>
           </div>
         </div>
       </div>
     </section>
-    <footer class="d-flex justify-content-center align-items-center">
+    <footer
+      class="d-flex justify-content-center align-items-center"
+      id="footer"
+    >
       <div class="footer-div container">
         <div class="row footer-top">
           <div class="col-md-4 top-left">Kishan</div>
