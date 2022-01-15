@@ -35,7 +35,7 @@
         style="position: fixed; z-index: 10"
       >
         <div class="logo" class="nav-home-logo">
-          <a href=""
+          <a href="#home-id"
             ><img
               src="https://cdn4.iconfinder.com/data/icons/internet-of-things-35/200/cloud-512.png"
               alt=""
@@ -44,16 +44,17 @@
         </div>
         <ul>
           <li>
-            <a href="#home-id">Home </a>
+            <a href="#home-id"><i class="fas fa-home"></i>&nbsp;Home </a>
           </li>
-          <li><a href="#about-id">About</a></li>
-          <li><a href="#portfolio-projects">Project</a></li>
-          <li><a href="#contact-me-id">Contact</a></li>
+          <li><a href="#about-id"><i class="fas fa-tasks"></i>&nbsp;About</a></li>
+          <li><a href="#portfolio-projects"><i class="fas fa-tasks"></i>&nbsp;Project</a></li>
+          <li><a href="#contact-me-id"><i class="fas fa-address-book"></i>&nbsp;Contact</a></li>
         </ul>
         <i
-          class="fas fa-sliders-h"
+          class="fas fa-sliders-h sliders-icon-header"
           id="slidbar_icon"
           onclick="myFunction()"
+          style="color: rgb(20, 20, 20)"
         ></i>
         <div
           class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark hide"
@@ -65,58 +66,43 @@
             href="/"
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
           >
-            <svg class="bi me-2" width="40" height="32">
-              <use
-                xlink:href="https://cdn4.iconfinder.com/data/icons/internet-of-things-35/200/cloud-512.png"
-                width="100%"
-                height="100%"
-                x="0"
-                y="0"
-              />
-            </svg>
-            <span class="fs-4">Kishan</span>
+            <img       
+            src="https://cdn4.iconfinder.com/data/icons/internet-of-things-35/200/cloud-512.png"
+            width="80rem"
+            height="80rem"
+            alt="">
+           
+            <span class="fs-4" style="color: orange;font-weight: 600;"> &nbsp; Kishan Lal Rai</span>
           </a>
           <hr />
           <ul class="nav nav-pills flex-column mb-auto" id="kiiran">
-            <li class="nav-item SlidItemActive">
-              <a
-                href="#home-id"
-                class="nav-link text-black"
-                aria-current="page"
-              >
-                <i class="fas fa-sliders-h"></i>
+            </li>
+            <li class="nav-item">
+              <a href="#home-id" class="nav-link text-white">
+              <i class="fas fa-home"></i>&nbsp;
                 Home
               </a>
             </li>
             <li class="nav-item">
               <a href="#about-id" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#portfolio-projects" />
-                </svg>
-                About
+               <i class="fas fa-tasks"></i>&nbsp;About
               </a>
             </li>
             <li class="nav-item">
               <a href="#portfolio-projects" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#portfolio-projects" />
-                </svg>
+               <i class="fas fa-tasks"></i>&nbsp;
                 Project
               </a>
             </li>
             <li class="nav-item">
               <a href="#Skills" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#grid" />
-                </svg>
+                <i class="fas fa-brain"></i>&nbsp;
                 Skills
               </a>
             </li>
             <li class="nav-item">
               <a href="#contact-me-id" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#contact-me-id" />
-                </svg>
+                <i class="fas fa-address-book"></i>&nbsp;
                 Contact
               </a>
             </li>
@@ -127,17 +113,23 @@
         <div class="row h-100">
           <div class="text-about-me col-md-6 d-flex">
             <div class="all-links">
-              <a href="https://github.com/Kishn0109"
+              <a href="https://github.com/Kishn0109" target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/karan1_09/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/mwlite/in/kishan-lal-rai-79505a214"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
             <div class="home-headings" id="kkk">
               <h1 class="headingStyle">Hi,I'm Kishan</h1>
               <p>Frontend Developer</p>
               <p>passinate about coding and excited to learn new things</p>
-              <button class="buttonDesign">Resume</button>
+              <a target="_blank" href="https://drive.google.com/file/d/1UuWEE2qTSHo29jkoRaRYJbfuyv12DaZc/view"><button class="buttonDesign" >Resume</button></a>
             </div>
           </div>
           <div class="home-image col-md-6">
@@ -172,8 +164,6 @@
                 />
               </g>
             </svg>
-
-            <!-- <img src="./homeimg.svg" alt="karan" width="100%" height="60%" /> -->
           </div>
         </div>
       </section>
@@ -216,7 +206,9 @@
                 </div>
               </div>
               <div class="button">
-                <button class="buttonDesign">button</button>
+                
+                <a href="https://github.com/Kishn0109" target="_blank"
+                ><button class="buttonDesign">button</button></a>
               </div>
             </div>
           </div>
@@ -309,7 +301,7 @@
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 90%"
+                  style="width: 65%"
                   aria-valuenow="30"
                   aria-valuemin="0"
                   aria-valuemax="100"
@@ -334,7 +326,7 @@
               </div>
             </li>
             <li>
-              <i class="fas fa-database"></i><span> MongoDb</span>
+              <i class="fas fa-database" style="color:#7d40ee;"></i><span> MongoDb</span>
               <div class="progress">
                 <div
                   class="progress-bar"
@@ -542,6 +534,7 @@
       <div class="projects-title headingStyle">Project</div>
       <div class="project-slide">
         <div id="carouselExampleCaptions" class="carousel slide">
+          <!--  add krna hai -->
           <div class="carousel-indicators">
             <button
               type="button"
@@ -566,7 +559,7 @@
           </div>
           <div class="carousel-width carousel-inner">
             <div class="carousel-item active">
-              <div class="row item-title headingStyle">title</div>
+              <div class="row item-title headingStyle">MERN Auth</div>
               <div class="row content-head">
                 <div class="col-md-6 project-img">
                   <img
@@ -578,25 +571,23 @@
                 <div class="col-md-6 item-right">
                   <div>
                     <div class="contant">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Tempora consequatur omnis, veritatis ullam officiis
-                      excepturi voluptates natus eos ipsum asperiores, eligendi
-                      tenetur dolorum, itaque sint reprehenderit ducimus sunt
-                      voluptas doloremque!
+                      <p>A web app with fully authentication using MongoDb,React.Js,Express.Js, Node.Js.</p>
+                      <p>Also user can add, update and delete his data easily.</p>
+                      <a href="https://github.com/Kishn0109/Auth" target="_blank"><button class="buttonDesign">Check out</button></a>
+                    
                     </div>
-                    <div class="Button">
-                      <button class="buttonDesign">Check out</button>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="row item-title headingStyle">title</div>
+              <div class="row item-title headingStyle">WhatsApp Clone </div>
+              
               <div class="row content-head">
                 <div class="col-md-6 project-img">
                   <img
-                    src="https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-33.jpg"
+                    src="https://www.technouz.com/wp-content/uploads/2015/08/WhatsApp-Web-2.png"
                     class="d-block"
                     alt="..."
                   />
@@ -604,20 +595,37 @@
                 <div class="col-md-6 item-right">
                   <div>
                     <div class="contant">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Tempora consequatur omnis, veritatis ullam officiis
-                      excepturi voluptates natus eos ipsum asperiores, eligendi
-                      tenetur dolorum, itaque sint reprehenderit ducimus sunt
-                      voluptas doloremque!
-                    </div>
-                    <div class="Button">
-                      <button class="buttonDesign">Check out</button>
+                      <p>A web chat app with fully authentication </p>
+                      <p>using Firebase,React.Js,Express.Js, Node.Js.</p>
+                      <a href="https://github.com/Kishn0109/Auth" target="_blank"><button class="buttonDesign">Check out</button></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
+              <div class="row item-title headingStyle">WhatsApp Clone </div>
+              
+              <div class="row content-head">
+                <div class="col-md-6 project-img">
+                  <img
+                    src="https://media.wired.com/photos/5cd60857426f104d1f89ddb4/master/w_1280%2Cc_limit/Gear-TA-Lenovo_Worlds_First_Foldable_PC_2.jpg"
+                    class="d-block"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-6 item-right">
+                  <div>
+                    <div class="contant">
+                      <p>A web chat app with fully authentication </p>
+                      <p>using Firebase,React.Js,Express.Js, Node.Js.</p>
+                      <a href="https://github.com/Kishn0109/Auth" target="_blank"><button class="buttonDesign">Check out</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
               <div class="row item-title headingStyle">title</div>
               <div class="row content-head">
                 <div class="col-md-6 project-img">
@@ -642,7 +650,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <button
             class="carousel-control-prev"
@@ -678,8 +686,6 @@
         <div class="row name">
           <div class="col-md-6"><i class="fas fa-user"></i> name</div>
           <div class="col-md-6 name-input">
-            <!-- <input type="text" name="" id="" />
-            <input type="text" name="" id="" /> -->
             <div class="contact-input" contenteditable="true">
               <input
                 type="text"

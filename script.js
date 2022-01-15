@@ -157,4 +157,7 @@ function handleSavingdata() {
   obj.emailId = emailId;
   obj.Message = Message;
   console.log(obj);
+  module.exports = {
+    firstName: firstName,
+  };
 }

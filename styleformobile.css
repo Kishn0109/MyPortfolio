@@ -27,10 +27,7 @@
     height: 100%;
     border-radius: 1rem;
   }
-  .carousel-item .item-right .contant {
-    height: 60%;
-    text-align: center;
-  }
+
   .carousel-item .item-right button {
     margin-top: 2rem;
   }
