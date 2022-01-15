@@ -140,12 +140,13 @@ function handelMyselfqualification() {
 //try to do save data using backend
 let qualificationSchool = document.getElementById("qualification-school-div");
 console.log(qualificationSchool);
-let obj = {
+var obj = {
   firstName: String,
   lastName: String,
   emailId: String,
   Message: String,
 };
+var k = "karan";
 function handleSavingdata() {
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("LastName").value;
@@ -157,7 +158,6 @@ function handleSavingdata() {
   obj.emailId = emailId;
   obj.Message = Message;
   console.log(obj);
-  module.exports = {
-    firstName: firstName,
-  };
+  module.exports = { obj };
 }
+console.log("script", k);
