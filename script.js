@@ -1,3 +1,4 @@
+AOS.init();
 //-------------------------------------------------------------------------global-------------------------------------//
 //-------------------------------------------------------------------------global-------------------------------------//
 
@@ -147,22 +148,22 @@ function handelMyselfqualification() {
 //   Message: String,
 // };
 var k = "karan";
-function handleSavingdata() {
-  let firstName = document.getElementById("firstName").value;
-  let lastName = document.getElementById("LastName").value;
-  var emailId = document.getElementById("EmailId").value;
-  var Message = document.getElementById("Message").value;
-  // console.log(firstName, lastName, emailId, Message);
-  // obj.firstName = firstName;
-  // obj.lastName = lastName;
-  // obj.emailId = emailId;
-  // obj.Message = Message;
-  // module.exports = { obj };
-  Email.send({
-    SecureToken: "96f5e505-62c2-4a7e-81ed-983e63269397",
-    To: "lal671525@gmail.com.com",
-    From: "you@isp.com",
-    Subject: "This is the ",
-    Body: `this is your ${firstName}`,
-  }).then((message) => alert(message));
-}
+// function handleSavingdata() {
+//   let firstName = document.getElementById("firstName").value;
+//   let lastName = document.getElementById("LastName").value;
+//   var emailId = document.getElementById("EmailId").value;
+//   var Message = document.getElementById("Message").value;
+//   // console.log(firstName, lastName, emailId, Message);
+//   // obj.firstName = firstName;
+//   // obj.lastName = lastName;
+//   // obj.emailId = emailId;
+//   // obj.Message = Message;
+//   // module.exports = { obj };
+//   Email.send({
+//     SecureToken: "96f5e505-62c2-4a7e-81ed-983e63269397",
+//     To: "lal671525@gmail.com.com",
+//     From: "you@isp.com",
+//     Subject: "This is the ",
+//     Body: `this is your ${firstName}`,
+//   }).then((message) => alert(message));
+// }
