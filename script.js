@@ -138,26 +138,31 @@ function handelMyselfqualification() {
 }
 
 //try to do save data using backend
-let qualificationSchool = document.getElementById("qualification-school-div");
-console.log(qualificationSchool);
-var obj = {
-  firstName: String,
-  lastName: String,
-  emailId: String,
-  Message: String,
-};
+// let qualificationSchool = document.getElementById("qualification-school-div");
+// console.log(qualificationSchool);
+// let obj = {
+//   firstName: String,
+//   lastName: String,
+//   emailId: String,
+//   Message: String,
+// };
 var k = "karan";
 function handleSavingdata() {
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("LastName").value;
   var emailId = document.getElementById("EmailId").value;
   var Message = document.getElementById("Message").value;
-  console.log(firstName, lastName, emailId, Message);
-  obj.firstName = firstName;
-  obj.lastName = lastName;
-  obj.emailId = emailId;
-  obj.Message = Message;
-  console.log(obj);
-  module.exports = { obj };
+  // console.log(firstName, lastName, emailId, Message);
+  // obj.firstName = firstName;
+  // obj.lastName = lastName;
+  // obj.emailId = emailId;
+  // obj.Message = Message;
+  // module.exports = { obj };
+  Email.send({
+    SecureToken: "96f5e505-62c2-4a7e-81ed-983e63269397",
+    To: "lal671525@gmail.com.com",
+    From: "you@isp.com",
+    Subject: "This is the ",
+    Body: `this is your ${firstName}`,
+  }).then((message) => alert(message));
 }
-console.log("script", k);

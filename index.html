@@ -29,13 +29,17 @@
       src="https://kit.fontawesome.com/2976b645ba.js"
       crossorigin="anonymous"
     ></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>All about me</title>
   </head>
   <body class="bg-light" style="color: gray">
     <header>
       <nav
-        class="container-fluid mobilenav"
-        style="position: fixed; z-index: 10"
+        class="container-fluid mobilenav effect1"
+        style="position: fixed; z-index: 10;"
       >
         <div class="logo" class="nav-home-logo">
           <a href="#home-id"
@@ -47,11 +51,11 @@
         </div>
         <ul>
           <li>
-            <a href="#home-id"><i class="fas fa-home"></i>&nbsp;Home </a>
+            <a href="#home-id">&nbsp;Home </a>
           </li>
-          <li><a href="#about-id"><i class="fas fa-tasks"></i>&nbsp;About</a></li>
-          <li><a href="#portfolio-projects"><i class="fas fa-tasks"></i>&nbsp;Project</a></li>
-          <li><a href="#contact-me-id"><i class="fas fa-address-book"></i>&nbsp;Contact</a></li>
+          <li><a href="#about-id">&nbsp;About</a></li>
+          <li><a href="#portfolio-projects">&nbsp;Project</a></li>
+          <li><a href="#contact-me-id">&nbsp;Contact</a></li>
         </ul>
         <i
           class="fas fa-sliders-h sliders-icon-header"
@@ -115,7 +119,7 @@
       <section class="home_section container" id="home-id">
         <div class="row h-100">
           <div class="text-about-me col-md-6 d-flex">
-            <div class="all-links">
+            <div class="all-links effect2">
               <a href="https://github.com/Kishn0109" target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
@@ -129,10 +133,10 @@
               ></a>
             </div>
             <div class="home-headings" id="kkk">
-              <h1 class="headingStyle">Hi, I'm Kishan</h1>
-              <p>Frontend Developer</p>
-              <p>passinate about coding and excited to learn new things.</p>
-              <a target="_blank" href="https://drive.google.com/file/d/1UuWEE2qTSHo29jkoRaRYJbfuyv12DaZc/view"><button class="buttonDesign" >Resume</button></a>
+              <h1 class="headingStyle" data-aos="fade-down">Hi, I'm Kishan</h1>
+              <p data-aos="zoom-out">MERN stack Developer</p>
+              <p data-aos="zoom-out">passinate about coding and excited to learn new things.</p>
+              <a  target="_blank"  href="https://drive.google.com/file/d/1UuWEE2qTSHo29jkoRaRYJbfuyv12DaZc/view"><button class="buttonDesign" style="margin-top: 4rem;">Resume</button></a>
             </div>
           </div>
           <div class="home-image col-md-6">
@@ -142,7 +146,9 @@
               xmlns:xlink="http://www.w3.org/1999/xlink"
               width="100%"
               height="60%"
-              style="fill: #7752bd"
+              style="fill: #7752bd;border-radius: 1rem;"
+              data-aos="zoom-out"  
+              
             >
               <mask id="mask0" mask-type="alpha">
                 <path
@@ -164,6 +170,8 @@
                   width="150%"
                   x="-57"
                   y="2"
+                                class="effect1"
+
                 />
               </g>
             </svg>
@@ -176,15 +184,18 @@
       <div class="about-me container">
         <div
           class="heading headingStyle d-flex justify-content-center align-items-center"
-        >
+        data-aos="fade-down">
           About me
         </div>
         <div class="contatent row">
-          <div class="about-image col-md-6 d-flex justify-content-center">
+          <div data-aos="zoom-out" class="about-image col-md-6 d-flex justify-content-center">
             <img
-              src="./undraw_laravel_and_vue_-59-tp.svg"
+              src="./KishanImg.jpeg"
               width="100%"
               alt=""
+              class="effect3"
+              style="border-radius: 1rem;   box-shadow: 0 0px 3px 0 rgb(0 0 0 / 20%), 0 3px 7px 0 rgb(0 0 0 / 19%);
+"
             />
           </div>
           <div
@@ -192,17 +203,17 @@
           >
             <div class="wraper">
               <div class="txt d-flex justify-content-center">
-                <p class="text-center">
+                <p class="text-center" data-aos="zoom-out">
                   MERN Stack Developer,with good understading in Web technology
                   and hand on experience.
                 </p>
               </div>
               <div class="score-projects d-flex">
-                <div class="total-pojects">
+                <div class="total-pojects" data-aos="zoom-out">
                   <h4>07+</h4>
                   <h4 class="headingStyle">projects</h4>
                 </div>
-                <div class="total-contribution">
+                <div class="total-contribution" data-aos="zoom-out">
                   <!-- <div class="value">07+</div> -->
                   <h4>07+</h4>
                   <h4 class="headingStyle">contribution</h4>
@@ -220,14 +231,14 @@
     </section>
     <section class="Skills container" id="Skills">
       <div class="skill1 skill-section">
-        <div class="head active_head">
+        <div class="head active_head effect4" style="margin-bottom: 1rem;">
           <div class="logo1"><i class="fas fa-code"></i></div>
           <div class="heading">frontend Development</div>
           <div class="logo2"><i class="fas fa-chevron-up"></i></div>
         </div>
-        <div class="skill1-items skill-items show">
+        <div class="skill1-items skill-items show ">
           <ul>
-            <li>
+            <li data-aos="zoom-out-right">
               <i class="fab fa-html5"></i><span> Html</span>
               <div class="progress">
                 <div
@@ -242,7 +253,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-out-left">
               <i class="fab fa-css3"></i><span>Css</span>
               <div class="progress">
                 <div
@@ -257,7 +268,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-out-right">
               <i class="fab fa-js-square"></i><span> Js</span>
               <div class="progress">
                 <div
@@ -272,7 +283,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-out-left">
               <i class="fab fa-react"></i><span> React.Js</span>
               <div class="progress">
                 <div
@@ -290,8 +301,8 @@
           </ul>
         </div>
       </div>
-      <div class="skill2 skill-section">
-        <div class="head">
+      <div class="skill2 skill-section ">
+        <div class="head effect4">
           <div class="logo1"><i class="fas fa-database"></i></div>
           <div class="heading">Backend Development</div>
           <div class="logo2"><i class="fas fa-chevron-up"></i></div>
@@ -449,7 +460,7 @@
       </div> -->
     </section>
     <section class="qualifacation-section container">
-      <div class="qualification-main_title headingStyle">Qualification</div>
+      <div class="qualification-main_title headingStyle" data-aos="fade-down">Qualification</div>
       <div class="subtitle d-flex justify-content-evenly">
         <div
           class="qualification-title"
@@ -472,7 +483,7 @@
       >
         <div class="row">
           <div class="qualification-data col-6 d-flex justify-content-end">
-            <div class="qualification-inner-data">
+            <div class="qualification-inner-data" >
               <h6 class="headingStyle">Diploma</h6>
               <p>Ambedkar Institute of Technology</p>
               <p><i class="far fa-calendar-alt"></i> 2019-2022</p>
@@ -504,7 +515,7 @@
       <div class="qualification-mySedlf" id="qualification-mySedlf">
         <div class="row">
           <div class="qualification-data col-6 d-flex justify-content-end">
-            <div class="qualification-inner-data">
+            <div class="qualification-inner-data" data-aos="zoom-out-right">
               <h6 class="headingStyle">Frontend development</h6>
               <p>Pepcoding</p>
               <p><i class="far fa-calendar-alt"></i> 2021-2022</p>
@@ -515,7 +526,7 @@
         <div class="row left">
           <div class="col-6"><span></span></div>
           <div class="qualification-data col-6 d-flex">
-            <div class="qualification-inner-data">
+            <div class="qualification-inner-data" data-aos="zoom-out-left">
               <h6 class="headingStyle">Backend development</h6>
               <p>Pepcoding</p>
               <p><i class="far fa-calendar-alt"></i> 2021-2022</p>
@@ -534,7 +545,7 @@
       </div>
     </section>
     <section class="portfolio-projects container" id="portfolio-projects">
-      <div class="projects-title headingStyle">Projects</div>
+      <div class="projects-title headingStyle" data-aos="fade-down">Projects</div>
       <div class="project-slide">
         <div id="carouselExampleCaptions" class="carousel slide">
           <!--  add krna hai -->
@@ -561,22 +572,25 @@
             ></button>
           </div>
           <div class="carousel-width carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active ">
               <div class="row item-title headingStyle">MERN Auth</div>
               <div class="row content-head">
                 <div class="col-md-6 project-img">
                   <img
                     src="https://static.techspot.com/images2/news/bigimage/2020/01/2020-01-15-image-33.jpg"
-                    class="d-block"
+                    class="d-block effect1"
                     alt="..."
+                    data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                   />
                 </div>
                 <div class="col-md-6 item-right">
                   <div>
-                    <div class="contant">
+                    <div class="contant" data-aos="zoom-out">
                       <p>A web app with fully authentication using MongoDb,React.Js,Express.Js, Node.Js.</p>
                       <p>Also user can add, update and delete his data easily.</p>
-                      <a href="https://github.com/Kishn0109/Auth" target="_blank"><button class="buttonDesign">Check out</button></a>
+                      <a href="https://github.com/Kishn0109/Auth" target="_blank"><button  class="buttonDesign">Check out</button></a>
                     
                     </div>
                    
@@ -591,7 +605,7 @@
                 <div class="col-md-6 project-img">
                   <img
                     src="https://www.technouz.com/wp-content/uploads/2015/08/WhatsApp-Web-2.png"
-                    class="d-block"
+                    class="d-block effect1"
                     alt="..."
                   />
                 </div>
@@ -600,7 +614,7 @@
                     <div class="contant">
                       <p>A web chat app with fully authentication </p>
                       <p>using Firebase,React.Js,Express.Js, Node.Js.</p>
-                      <a href="https://github.com/Kishn0109/Auth" target="_blank"><button class="buttonDesign">Check out</button></a>
+                      <a href="https://github.com/Kishn0109/Auth" target="_blank"><button  class="buttonDesign">Check out</button></a>
                     </div>
                   </div>
                 </div>
@@ -613,7 +627,7 @@
                 <div class="col-md-6 project-img">
                   <img
                     src="https://media.wired.com/photos/5cd60857426f104d1f89ddb4/master/w_1280%2Cc_limit/Gear-TA-Lenovo_Worlds_First_Foldable_PC_2.jpg"
-                    class="d-block"
+                    class="d-block effect1"
                     alt="..."
                   />
                 </div>
@@ -682,15 +696,24 @@
       </div>
     </section>
     <section class="contact-me container" id="contact-me-id">
-      <div class="contact-title">
-        <h1 class="headingStyle">Contact Me</h1>
+      <div class="contact-title" >
+        <h1 class="headingStyle" data-aos="fade-down">Contact Me</h1>
         <p>Want to contact me ?</p>
       </div>
-      <div class="contact-data">
-        <div class="row name">
-          <div class="col-md-6 headingStyle"><i class="fas fa-user"></i> Name</div>
+      <div class="myalert alert-success hide-alert" role="alert" id="send-sucess">
+	        your response has been saved
+	    </div>
+      <div class="myalert alert-danger hide-alert" role="alert" id="error-dengar">
+	        please fill all details
+	    </div>
+      <div class="myalert alert-danger hide-alert" role="alert" id="server-error-dengar">
+	        please fill all details
+	    </div>
+      <div class="contact-data" style="position: relative;">
+        <div class="row name" >
+          <div class="col-md-6 headingStyle" data-aos="fade-down-right"><i class="fas fa-user"></i> Name</div>
           <div class="col-md-6 name-input">
-            <div class="contact-input" contenteditable="true">
+            <div class="contact-input effect4" data-aos="fade-right">
               <input
                 type="text"
                 width="100%"
@@ -701,10 +724,10 @@
                   width: 100%;
                   background: none;
                 "
-                placeholder="Kishan"
+                placeholder="firstName"
               />
             </div>
-            <div class="contact-input" contenteditable="true">
+            <div class="contact-input effect4" data-aos="fade-left" >
               <input
                 type="text"
                 name=""
@@ -715,18 +738,17 @@
                   width: 100%;
                   background: none;
                 "
-                placeholder="Rai"
+                placeholder="LastName"
                 id="LastName"
               />
             </div>
           </div>
         </div>
-        <div class="row email">
-          <div class="col-md-6 headingStyle"><i class="fas fa-envelope"></i> Email</div>
+        <div class="row email" data-aos="zoom-in-up">
+          <div class="col-md-6 headingStyle" data-aos="fade-down-right"><i class="fas fa-envelope"></i> Email</div>
           <div class="col-md-6">
             <div
-              class="contact-input"
-              contenteditable="true"
+              class="contact-input effect4"
               width="100%"
               placeholder="kaean"
             >
@@ -741,16 +763,16 @@
                   width: 100%;
                   background: none;
                 "
-                placeholder="kishan.lal.rai.210121@gmail.com"
+                placeholder="Please enter your Email"
                 id="EmailId"
               />
             </div>
           </div>
         </div>
-        <div class="row message">
-          <div class="col-md-6 headingStyle"><i class="fas fa-comments"></i> Message</div>
+        <div class="row message"  data-aos="zoom-in">
+          <div class="col-md-6 headingStyle" data-aos="fade-down-right"><i class="fas fa-comments"></i> Message</div>
           <div class="col-md-6">
-            <div class="contact-input" contenteditable="true" width="100%">
+            <div class="contact-input effect4" width="100%">
               <input
                 type="text"
                 name=""
@@ -761,7 +783,7 @@
                   width: 100%;
                   background: none;
                 "
-                placeholder="How are you"
+                placeholder="How are you?"
                 id="Message"
               />
             </div>
@@ -770,13 +792,14 @@
               class="buttonDesign"
               style="margin-top: 1rem"
               onclick="handleSavingdata()"
+              
             >
               Send Message
             </button>
           </div>
         </div>
       </div>
-    </section>
+    </section>     
     <footer
       class="d-flex justify-content-center align-items-center"
       id="footer"
@@ -798,7 +821,69 @@
         <div class="row footer-bottom">@Kishan Lal Rai</div>
       </div>
     </footer>
+    <script>
+      function handleSavingdata() {
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("LastName").value;
+        let emailId = document.getElementById("EmailId").value;
+        let Message = document.getElementById("Message").value;
+        if(firstName.length==0 || emailId.length==0 || Message.length==0){
+          let error=document.getElementById("error-dengar");
+                  error.classList.remove("hide-alert");
+                  error.classList.add("show-alert");
+                  // alert("your response has been saved");
+                  function greet() {
+                       error.classList.remove("show-alert");
+                        error.classList.add("hide-alert");
+                  }
+                      setTimeout(greet, 3000);
+                  
+          return;
+        }
+              Email.send({
+                SecureToken: "96f5e505-62c2-4a7e-81ed-983e63269397",
+                To:"lal671525@gmail.com",
+                From: "lal671525@gmail.com",
+                Subject: `${firstName}  ${lastName} send a message from your portfolio`,
+                Body: ` Information regarding user:
+                              firstName=${firstName}
+                              lastname=${lastName}
+                              emailId=${emailId}
+                              Message=${Message}
+                             `,
+              }).then((message) => {
+                console.log(message);
+                if(message==="OK"){
+                    // console.log("else chala");
+                  let sendsucess=document.getElementById("send-sucess");
+                  sendsucess.classList.remove("hide-alert");
+                  sendsucess.classList.add("show-alert");
+                  // alert("your response has been saved");
+                  function greet() {
+                       sendsucess.classList.remove("show-alert");
+                        sendsucess.classList.add("hide-alert");
+                  }
+                      setTimeout(greet, 3000);
+                  
+                }else{
+                  let servererror=document.getElementById("server-error-dengar");
+                  servererror.classList.remove("hide-alert");
+                  servererror.classList.add("show-alert");
+                  servererror.innerText=`${message}`
+                  // alert("your response has been saved");
+                  function greet() {
+                       servererror.classList.remove("show-alert");
+                        servererror.classList.add("hide-alert");
+                  }
+                      setTimeout(greet, 3000);
+                  }
+              });
+              console.log("hit hua");
+      }
+
+    </script>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="./nodemailerProject/index.js"></script> -->
     <script src="./test.js" type="text/javascript"></script>
     <script>
