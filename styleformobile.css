@@ -29,10 +29,13 @@
   }
 
   .carousel-item .item-right button {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
   .carousel-width {
     width: 100%;
+  }
+  .carousel-item .item-right .contant {
+    margin-top: -1rem;
   }
 }
 @media only screen and (min-width: 500px) {
