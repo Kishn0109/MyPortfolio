@@ -167,7 +167,7 @@ header .hide {
   width: 48%;
 }
 .Skills .skill-items {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 0.6rem;
   margin-top: 0.2rem;
   /* border-top: none; */

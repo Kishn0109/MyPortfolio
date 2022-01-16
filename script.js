@@ -1,4 +1,4 @@
-AOS.init();
+// AOS.init();
 //-------------------------------------------------------------------------global-------------------------------------//
 //-------------------------------------------------------------------------global-------------------------------------//
 
@@ -45,57 +45,82 @@ console.log(myAllnavitems);
 //-------------------------------------------------------------------------Header-------------------------------------//
 
 //--------------------------------------skill section
-let Allskill_section = document.querySelectorAll(".skill-section");
+let Allskill_section = document.querySelectorAll(".head");
+console.log("all", Allskill_section);
+// // 1. function to show one skill at a time
+// Allskill_section.forEach((skill_section) => {
+//   skill_section.addEventListener("click", (e) => {
+//     // let firstclasselement = value.classList[0];
+//     // console.log(e.path[0]);
+//     handelActive(e.path[0]);
+//     e.path[0].classList.add("active_head");
+//     if (e.path.length < 8) {
+//       console.log("click me aya 1");
+//       let AllSkills_item = document.querySelectorAll(".skill-items");
+//       AllSkills_item.forEach((skill_section2) => {
+//         skill_section2.classList.remove("show");
+//         skill_section2.classList.add("hide");
+//       });
+//       // console.log(e.path[1].lastElementChild.classList[0]);
+//       // e.path[1].classList[0] It will help to extract particular class
+//       let element = document.querySelector(
+//         `.${e.path[1].lastElementChild.classList[0]}`
+//       );
 
-// 1. function to show one skill at a time
+//       if (element.classList[element.classList.length - 1] == "show") {
+//         element.classList.remove("show");
+//         element.classList.add("hide");
+//       } else {
+//         element.classList.add("show");
+//         element.classList.remove("hide");
+//       }
+//     }
+//     // element.classList.add("show");
+//   });
+// });
+// function handelActive(head) {
+//   let Allhead = document.querySelectorAll(".head");
+//   Allhead.forEach((head) => {
+//     console.log("ye aye", head);
+//     if ((head.classList.contains = "active_head")) {
+//       head.classList.remove("active_head");
+//     }
+//   });
+//   // console.log(head);
+// }
+// //agian removing show class for toggle
+// let skill_item = document.querySelectorAll(".skill-items");
+// skill_item.forEach((oneitem) => {
+//   oneitem.addEventListener("click", () => {
+//     oneitem.classList.remove("show");
+//     oneitem.classList.add("hide");
+//   });
+// });
+
 Allskill_section.forEach((skill_section) => {
   skill_section.addEventListener("click", (e) => {
-    // let firstclasselement = value.classList[0];
-    // console.log(e.path[0]);
-    handelActive(e.path[0]);
-    e.path[0].classList.add("active_head");
-    if (e.path.length < 8) {
-      console.log("click me aya 1");
-      let AllSkills_item = document.querySelectorAll(".skill-items");
-      AllSkills_item.forEach((skill_section2) => {
-        skill_section2.classList.remove("show");
-        skill_section2.classList.add("hide");
-      });
-      // console.log(e.path[1].lastElementChild.classList[0]);
-      // e.path[1].classList[0] It will help to extract particular class
-      let element = document.querySelector(
-        `.${e.path[1].lastElementChild.classList[0]}`
-      );
-
-      if (element.classList[element.classList.length - 1] == "show") {
-        element.classList.remove("show");
-        element.classList.add("hide");
-      } else {
-        element.classList.add("show");
-        element.classList.remove("hide");
-      }
-    }
-    // element.classList.add("show");
+    removeallActive();
+    skill_section.classList.add("active_head");
+    activateSkillitems(skill_section.classList[0]);
   });
 });
-function handelActive(head) {
+function activateSkillitems(value) {
+  let target = document.getElementById(`${value}`);
+  target.classList.remove("hide");
+  target.classList.add("show");
+  console.log(target);
+}
+let skill_items = document.querySelectorAll(".skill-items");
+function removeallActive() {
   let Allhead = document.querySelectorAll(".head");
   Allhead.forEach((head) => {
-    console.log("ye aye", head);
-    if ((head.classList.contains = "active_head")) {
-      head.classList.remove("active_head");
-    }
+    head.classList.remove("active_head");
   });
-  // console.log(head);
+  skill_items.forEach((skill_item) => {
+    skill_item.classList.remove("show");
+    skill_item.classList.add("hide");
+  });
 }
-//agian removing show class for toggle
-let skill_item = document.querySelectorAll(".skill-items");
-skill_item.forEach((oneitem) => {
-  oneitem.addEventListener("click", () => {
-    oneitem.classList.remove("show");
-    oneitem.classList.add("hide");
-  });
-});
 //--------------------------------------skill section
 //--------------------------------------qualification section
 
